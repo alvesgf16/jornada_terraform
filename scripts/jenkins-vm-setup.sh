@@ -5,7 +5,7 @@ curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cl
 echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 apt update
 apt install -y openjdk-17-jdk kubectl
-apt install jenkins
+apt install -y jenkins
 usermod -aG docker jenkins
 systemctl restart 
 cat /var/lib/jenkins/secrets/initialAdminPassword
