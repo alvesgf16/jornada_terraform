@@ -7,5 +7,5 @@ apt update
 apt install -y openjdk-17-jdk kubectl
 apt install -y jenkins
 usermod -aG docker jenkins
-systemctl restart 
+systemctl restart jenkins
 cat /var/lib/jenkins/secrets/initialAdminPassword
